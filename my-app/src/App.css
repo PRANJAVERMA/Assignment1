@@ -1,0 +1,137 @@
+/* General styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #b6ccec; /* Light blue background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for app */
+div {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Header */
+h1 {
+  font-size: 36px;
+  color: #19bb6a; /* Green color */
+  margin: 30px 0 20px; /* Margin from top and bottom */
+}
+
+/* Timer section */
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #8f1d99;
+  margin: 20px 0;
+}
+
+/* Question styling */
+h2 {
+  font-size: 30px;
+  color: #5fe1c9;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 15px 0;
+}
+
+/* Option styling */
+input[type="radio"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+label {
+  font-size: 18px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #f1f1f1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Option hover effect */
+label:hover {
+  background-color: #4CAF50;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Correct/Incorrect styling */
+label.correct {
+  background-color: #34c139; /* Green for correct answers */
+  color: white;
+}
+
+label.incorrect {
+  background-color: #af322a; /* Red for incorrect answers */
+  color: white;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Disabled button styling */
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Next button styling */
+button + button {
+  background-color: #2196F3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  div {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2, h3 {
+    font-size: 22px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+}
